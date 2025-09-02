@@ -1,0 +1,23 @@
+{
+	"name": "api-node-fastify",
+	"version": "1.0.0",
+	"description": "API Fastify basica",
+	"scripts": {
+		"dev": "pnpm env:load tsx watch src/main.ts",
+		"db:migrate": "pnpm env:load prisma migrate dev --schema=./src/infrastructure/prisma/schema.prisma",
+		"db:studio": "pnpm env:load prisma studio --schema=./src/infrastructure/prisma/schema.prisma",
+		"env:load": "dotenv -e .env --"
+	},
+	"dependencies": {
+		"@prisma/client": "6.15.0",
+		"bcryptjs": "^3.0.2",
+		"dotenv-cli": "^10.0.0",
+		"fastify": "^5.5.0",
+		"prisma": "^6.15.0"
+	},
+	"devDependencies": {
+		"@types/bcryptjs": "^3.0.0",
+		"@types/node": "^24.3.0",
+		"tsx": "^4.20.5"
+	}
+}
