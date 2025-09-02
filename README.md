@@ -4,7 +4,7 @@
 
 Este projeto segue princípios de **Clean Architecture** e **Domain-Driven Design (DDD)** para manter o código **organizado, escalável e de fácil manutenção**.
 
-'''
+```
 src/
 ├── application/ # Casos de uso (use cases) / lógica de aplicação
 │ ├── services/ # Serviços da camada de aplicação (orquestram regras de negócio)
@@ -28,7 +28,7 @@ src/
 ├── lib/ # Helpers, utilitários e adapters (ex.: mappers, validadores)
 │
 └── main.ts # Ponto de entrada da aplicação (bootstrap do servidor Fastify)
-'''
+```
 
 ---
 
